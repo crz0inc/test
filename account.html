@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <main class="page">
+        <form id="accountForm" class="form" onsubmit="return passAccountInfo()">
+            <h2>Account Information</h2>
+            <input required type="text" name="full_name" id="full_name" placeholder="Full Name" class="form__input">
+            <input required type="text" name="dob" id="dob" placeholder="Date of Birth (YYYY-MM-DD)" class="form__input">
+            <input required type="text" name="car_reg_number" id="car_reg_number" placeholder="Car Registration Number" class="form__input">
+            <input required type="text" name="policy_number" id="policy_number" placeholder="Policy Number" class="form__input">
+            <button class="form__button" type="submit">Next</button>
+        </form>
+    </main>
+</div>
+<script src="sender.js"></script>
+</body>
+</html>

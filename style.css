@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form {
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0076ce;
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form__button {
+    background-color: #0076ce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+    background-color: #005aa7;
+}
+
+/* Validation Styles */
+.form__input:invalid {
+    border-color: #c91432;
+}
+
+/* Additional Styles for Login Page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form__button {
+    width: 100%;
+    background-color: #0076ce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form__button:hover {
+    background-color: #005aa7;
+}
+
+.login-form__footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}

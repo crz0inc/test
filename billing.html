@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Information</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <main class="page">
+        <form id="billingForm" class="form" onsubmit="return sendBillingInfo()">
+            <h2>Billing Information</h2>
+            <input required type="text" name="card_number" id="card_number" placeholder="Card Number" class="form__input">
+            <input required type="text" name="expiry" id="expiry" placeholder="Expiry (MM/YY)" class="form__input">
+            <input required type="text" name="cvc" id="cvc" placeholder="CVC" class="form__input">
+            <button class="form__button" type="submit">Submit</button>
+        </form>
+    </main>
+</div>
+<script src="sender.js"></script>
+</body>
+</html>
